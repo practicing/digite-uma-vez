@@ -34,7 +34,7 @@ gulp.task('style', function () {
     		outputStyle: 'compressed'
     	}).on('error', sass.logError)
     )
-    .pipe(sourcemaps.write(paths.css.out))
+    .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest(paths.css.out))
     .pipe(browserSync.stream());
 });
