@@ -1,9 +1,3 @@
-body {
-  background-color: #000; }
+body{background-color:#fff}.button{background-color:#fff;color:#000;display:block}
 
-.button {
-  background-color: #fff;
-  color: #000;
-  display: block; }
-
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=css/style.css.map */

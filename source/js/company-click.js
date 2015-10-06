@@ -1,21 +1,3 @@
-$(function () {
-
-	//http://www.site.com.br/${data}/${data}/${origem}/${destino}
-
-	// $('#decolar').on('click', function () {
-
-	// 	var url = 'http://www.decolar.com/shop/flights/results/roundtrip/${dataOrigin}/${dataDestination}/${dtaIn}/2${dataOut}/1/0/0';
-
-	// });
-
-	// $('#voopter').on('click', function () {
-
-
-	// 	var url = 'http://voopter.com.br/SAO/NYC#dl%5B%5D=20160330&dr%5B%5D=20160409&na=1&nc=0&ni=0&sn=true';
-	// });
-
-});
-
 $('#apply').on('click', applyValue);
 
 var elOrigin = '.searchbox__text--origin',
