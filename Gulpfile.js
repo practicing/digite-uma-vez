@@ -51,12 +51,5 @@ gulp.task('styleLint', function() {
 });
 
 
-gulp.task('test', function() {
-	return gulp.src(paths.css.inp)
-	//.pipe( plugins.plumber({errorHandler: onError}) )
-	.pipe(plugins.scssLint({
-		endless: true,
-		sync: true
-	}))
-	.pipe(plugins.scssLint.failReporter('E'));
-});
+// Build the code
+gulp.task('build', ['style']);
