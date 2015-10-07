@@ -47,7 +47,7 @@ gulp.task('styleLint', function() {
 		endless: true,
 		sync: true
 	}))
-	.pipe(plugins.scssLint.failReporter('E'));
+	.pipe(plugins.scssLint.failReporter());
 });
 
 
