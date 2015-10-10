@@ -67,8 +67,14 @@ gulp.task('js:compress', function() {
 
 
 // Build the code
+
+// Browser Sync helper tasks
 gulp.task('js:bsWatch', ['js:compress'], browserSync.reload);
 gulp.task('css:bsWatch', ['css:lint', 'css:compress'], browserSync.stream);
-// gulp.task('js:compress', ['js-compress']);
+
+// Main tasks
 gulp.task('server', ['browser-sync']);
-gulp.task('build', ['styleLint']);
+
+// Tasks to check the code via automated tools
+gulp.task('pre-commit', ['css:lint']);
+gulp.task('travis-ci', ['css:lint']);

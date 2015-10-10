@@ -27,10 +27,10 @@
     "pre-commit": "^1.1.1"
   },
   "scripts" : {
-    "build": "gulp build"
+    "pre-commit": "gulp pre-commit"
   },
   "precommit": {
-    "run": "build"
+    "run": "pre-commit"
   },
   "engines": {
     "node": ">=0.10.0"
