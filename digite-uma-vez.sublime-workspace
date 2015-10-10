@@ -84,26 +84,51 @@
 	"buffers":
 	[
 		{
-			"file": "index.html",
+			"file": "Gulpfile.js",
 			"settings":
 			{
-				"buffer_size": 2224,
+				"buffer_size": 1196,
+				"line_ending": "Unix",
+				"name": "var gulp        = require('gulp');"
+			}
+		},
+		{
+			"file": "README.md",
+			"settings":
+			{
+				"buffer_size": 725,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "source/js/company-click.js",
+			"file": ".travis.yml",
 			"settings":
 			{
-				"buffer_size": 1588,
+				"buffer_size": 151,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "grunt/uglify.js",
+			"file": "package.json",
 			"settings":
 			{
-				"buffer_size": 307,
+				"buffer_size": 724,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "source/sass/_company.scss",
+			"settings":
+			{
+				"buffer_size": 258,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "css/style.css",
+			"settings":
+			{
+				"buffer_size": 133,
 				"line_ending": "Unix"
 			}
 		}
@@ -157,15 +182,28 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/luisfmsouza/Documents/web/development/digiteumavez",
-		"/Users/luisfmsouza/Documents/web/development/digiteumavez/css",
-		"/Users/luisfmsouza/Documents/web/development/digiteumavez/grunt",
-		"/Users/luisfmsouza/Documents/web/development/digiteumavez/js",
-		"/Users/luisfmsouza/Documents/web/development/digiteumavez/source",
-		"/Users/luisfmsouza/Documents/web/development/digiteumavez/source/js"
+		"/Users/luisfmsouza/Documents/web/development/digite-uma-vez",
+		"/Users/luisfmsouza/Documents/web/development/digite-uma-vez/css",
+		"/Users/luisfmsouza/Documents/web/development/digite-uma-vez/js",
+		"/Users/luisfmsouza/Documents/web/development/digite-uma-vez/source",
+		"/Users/luisfmsouza/Documents/web/development/digite-uma-vez/source/js",
+		"/Users/luisfmsouza/Documents/web/development/digite-uma-vez/source/sass"
 	],
 	"file_history":
 	[
+		"/Users/luisfmsouza/Documents/web/development/digite-uma-vez/css/style.css",
+		"/Users/luisfmsouza/Documents/web/development/digite-uma-vez/source/js/company-click.js",
+		"/Users/luisfmsouza/Documents/web/development/digite-uma-vez/package.json",
+		"/Users/luisfmsouza/Documents/web/development/digite-uma-vez/source/sass/style.scss",
+		"/Users/luisfmsouza/Documents/web/development/digite-uma-vez/Gruntfile.js",
+		"/Users/luisfmsouza/Documents/web/development/digite-uma-vez/grunt/watch.js",
+		"/Users/luisfmsouza/Documents/web/development/digite-uma-vez/index.html",
+		"/Users/luisfmsouza/Documents/web/development/grunt-getting-started/README.md",
+		"/Users/luisfmsouza/Documents/web/development/vertical-center-align/README.md",
+		"/Users/luisfmsouza/Documents/web/development/presentations/README.md",
+		"/Users/luisfmsouza/Documents/web/development/digite-uma-vez/digite-uma-vez/README.md",
+		"/Users/luisfmsouza/Documents/web/development/digite-uma-vez/digite-uma-vez/.gitignore",
+		"/Users/luisfmsouza/Documents/web/development/digite-uma-vez/digite-uma-vez/package.json",
 		"/Users/luisfmsouza/Documents/web/development/digiteumavez/grunt/browserSync.js",
 		"/Users/luisfmsouza/Documents/web/development/digiteumavez/source/sass/_company.scss",
 		"/Users/luisfmsouza/Documents/web/development/digiteumavez/grunt/watch.js",
@@ -239,6 +277,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"build",
+			"$",
+			"});\n",
+			"https://github.com/ciandt-dev/grunt-boilerplate",
+			"https://github.com/ciandt-dev/grunt-boilerplate/",
 			"<a href=\"#\"",
 			"dataHref",
 			"\"W3Schools\"",
@@ -307,86 +350,114 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 5,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "index.html",
+					"file": "Gulpfile.js",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2224,
+						"buffer_size": 1196,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1875,
-								1875
+								1134,
+								1134
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": true
+							"auto_name": "var gulp        = require('gulp');",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "source/js/company-click.js",
+					"file": "README.md",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1588,
+						"buffer_size": 725,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1236,
-								1236
+								126,
+								191
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 150.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "grunt/uglify.js",
+					"file": ".travis.yml",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 307,
+						"buffer_size": 151,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								52,
-								52
+								97,
+								97
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"syntax": "Packages/YAML/YAML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "package.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 724,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								638,
+								638
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
 						},
@@ -394,7 +465,63 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "source/sass/_company.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 258,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								206,
+								206
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "css/style.css",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 133,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
 					"type": "text"
 				}
 			]
@@ -493,7 +620,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 146.0,
+	"side_bar_width": 198.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

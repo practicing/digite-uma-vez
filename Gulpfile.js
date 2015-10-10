@@ -48,8 +48,8 @@ gulp.task('css:compress', function () {
 
 // Scss Lint
 gulp.task('css:lint', function() {
-	return gulp.src(paths.css.input)
-    	.pipe(plugins.plumber({errorHandler: onError}))
+	return gulp.src([paths.css.input])
+    	// .pipe(plugins.plumber({errorHandler: onError}))
     	.pipe(plugins.scssLint({
     		endless: true,
     		sync: true
@@ -75,15 +75,20 @@ gulp.task('js:compress', function() {
 // JS Eslint
 gulp.task('js:lint', function () {
     return gulp.src([paths.js.input])
-        .pipe(plugins.plumber({errorHandler: onError}))
+        // .pipe(plugins.plumber({errorHandler: onError}))
         .pipe(plugins.eslint())
         .pipe(plugins.eslint.format())
         .pipe(plugins.eslint.failAfterError());
 });
 
-gulp.task('js:watch', ['js:lint'], function () {
-    gulp.watch([paths.js.input], ['js:lint']);
-})
+// gulp.task('js:watch', ['js:lint'], function () {
+//     gulp.watch([paths.js.input], ['js:lint']);
+// });
+
+
+// gulp.task('css:watch', ['css:lint'], function () {
+//     gulp.watch([paths.css.input], ['css:lint']);
+// });
 
 
 // Build the code
