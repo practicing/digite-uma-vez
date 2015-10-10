@@ -11,8 +11,11 @@
   "bugs": {
     "url": "https://github.com/luisfmsouza/digite-uma-vez/issues"
   },
-  "homepage": "https://github.com/luisfmsouza/digite-uma-vez",
-  "dependencies": {},
+  "repository": "https://github.com/luisfmsouza/digite-uma-vez",
+  "homepage": "http://digiteumavez.herokuapp.com/",
+  "dependencies": {
+    "mime" : "~1.2.7"
+  },
   "devDependencies": {
     "browser-sync": "^2.9.8",
     "gulp": "^3.9.0",
