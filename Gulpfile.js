@@ -78,7 +78,7 @@ gulp.task('js:lint', function () {
         .pipe(plugins.plumber({errorHandler: onError}))
         .pipe(plugins.eslint())
         .pipe(plugins.eslint.format())
-        // .pipe(plugins.eslint.failAfterError());
+        .pipe(plugins.eslint.failAfterError());
 });
 
 gulp.task('js:watch', ['js:lint'], function () {
@@ -96,5 +96,5 @@ gulp.task('css:bsWatch', ['css:lint', 'css:compress'], browserSync.stream);
 gulp.task('server', ['browser-sync']);
 
 // Tasks to check the code via automated tools
-gulp.task('pre-commit', ['css:lint']);
-gulp.task('travis-ci', ['css:lint']);
+gulp.task('pre-commit', ['css:lint', 'js:lint']);
+gulp.task('travis-ci', ['css:lint', 'js:lint']);
