@@ -23,7 +23,7 @@ gulp.task('browser-sync', function() {
 
     gulp.watch(paths.css.input, ['css:bsWatch']);
     gulp.watch(paths.js.input, ['js:bsWatch']);
-    //gulp.watch("source/html/*.html").on('change', browserSync.reload);
+    gulp.watch('*.html').on('change', browserSync.reload);
 });
 
 function onError(error) {
