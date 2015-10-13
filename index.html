@@ -8,14 +8,79 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- <header id="header">
+
+    <header id="header">
         <h1>Digite uma vez!</h1>
         <h2>Cansado de digitar datas e destinos toda vez que acessa um novo site pra consulta de preço?</h2>
         <p>1 - Escolha as datas que pretende viajar.</p>
         <p>2 - Escolha a origem. E o destino.</p>
         <p>3 - Cliquem em qual site deseja consultar.</p>
         <p>Simples assim! :)</p>
-    </header> -->
+    </header>
+
+    <!-- <div ng-controller="duvController as travel">
+        {{travel.origin}}
+        {{travel.destination}}
+    </div> -->
+
+    <div ng-controller="autocompleteController as acCtrl" layout="column" ng-cloak>
+        <md-content class="md-padding">
+            <form ng-submit="$event.preventDefault()">
+                <p>Origem:</p>
+                <md-autocomplete
+                    md-no-cache="true"
+                    md-selected-item="acCtrl.selectedItem"
+                    md-search-text-change="acCtrl.searchTextChange(acCtrl.searchText)"
+                    md-search-text="acCtrl.searchText"
+                    md-selected-item-change="acCtrl.selectedItemChange(item)"
+                    md-items="item in acCtrl.querySearch(acCtrl.searchText)"
+                    md-item-text="item.display"
+                    md-min-length="0"
+                    placeholder="Quel é o aeroporto de origem?">
+                    <md-item-template>
+                        <span md-highlight-text="acCtrl.searchText" md-highlight-flags="^i">{{item.display}}</span>
+                    </md-item-template>
+                    <md-not-found>
+                        No matches found for "{{acCtrl.searchText}}".
+                    </md-not-found>
+                </md-autocomplete>
+            </form>
+        </md-content>
+    </div>
+
+    <div ng-controller="autocompleteController as acCtrl" layout="column" ng-cloak>
+        <md-content class="md-padding">
+            <form ng-submit="$event.preventDefault()">
+                <p>Destino:</p>
+                <md-autocomplete
+                    md-no-cache="true"
+                    md-selected-item="acCtrl.selectedItem"
+                    md-search-text-change="acCtrl.searchTextChange(acCtrl.searchText)"
+                    md-search-text="acCtrl.searchText"
+                    md-selected-item-change="acCtrl.selectedItemChange(item)"
+                    md-items="item in acCtrl.querySearch(acCtrl.searchText)"
+                    md-item-text="item.display"
+                    md-min-length="0"
+                    placeholder="Qual é o aeroporto de destino?">
+                    <md-item-template>
+                        <span md-highlight-text="acCtrl.searchText" md-highlight-flags="^i">{{item.display}}</span>
+                    </md-item-template>
+                    <md-not-found>
+                        No matches found for "{{acCtrl.searchText}}".
+                    </md-not-found>
+                </md-autocomplete>
+            </form>
+        </md-content>
+    </div>
+
+    <div ng-controller="datepickerCtrl" layout="column" ng-cloak>
+        <md-content class="md-padding">
+            <p>Ida:</p>
+            <md-datepicker ng-model="origDate" md-placeholder="Selecione a data"></md-datepicker>
+            <p>Volta:</p>
+            <md-datepicker ng-model="destDate" md-placeholder="Selecione a data"></md-datepicker>
+        </md-content>
+    </div>
 
     <!-- <section id="main">
         <div class="searchbox">
@@ -43,48 +108,9 @@
         </div>
     </section> -->
 
-    <!-- <div ng-controller="AppCtrl" style='padding: 40px;' ng-cloak>
-        <md-content>
-            <h4>Ida:</h4>
-            <md-datepicker ng-model="origDate" md-placeholder="Selecione a data"></md-datepicker>
-            <h4>Volta:</h4>
-            <md-datepicker ng-model="destDate" md-placeholder="Selecione a data"></md-datepicker>
-        </md-content>
-    </div> -->
 
-    <!-- <div ng-controller="DemoCtrl as ctrl" layout="column" ng-cloak>
-        <md-content class="md-padding">
-            <form ng-submit="$event.preventDefault()">
-                <p>Use <code>md-autocomplete</code> to search for matches from local or remote data sources.</p>
-                <md-autocomplete
-                    ng-disabled="ctrl.isDisabled"
-                    md-no-cache="ctrl.noCache"
-                    md-selected-item="ctrl.selectedItem"
-                    md-search-text-change="ctrl.searchTextChange(ctrl.searchText)"
-                    md-search-text="ctrl.searchText"
-                    md-selected-item-change="ctrl.selectedItemChange(item)"
-                    md-items="item in ctrl.querySearch(ctrl.searchText)"
-                    md-item-text="item.display"
-                    md-min-length="0"
-                    placeholder="What is your favorite US state?">
-                    <md-item-template>
-                        <span md-highlight-text="ctrl.searchText" md-highlight-flags="^i">{{item.display}}</span>
-                    </md-item-template>
-                    <md-not-found>
-                        No matches found for "{{ctrl.searchText}}".
-                    </md-not-found>
-                </md-autocomplete>
-                <br/>
-                <md-checkbox ng-model="ctrl.simulateQuery">Simulate query for results?</md-checkbox>
-                <md-checkbox ng-model="ctrl.noCache">Disable caching of queries?</md-checkbox>
-                <md-checkbox ng-model="ctrl.isDisabled">Disable the input?</md-checkbox>
-                <p>By default, <code>md-autocomplete</code> will cache results when performing a query.  After the initial call is performed, it will use the cached results to eliminate unnecessary server requests or lookup logic. This can be disabled above.</p>
-            </form>
-        </md-content>
-    </div> -->
+    <footer>É apenas uma maneira simples e automatizada de selecionar as datas antes das pesquisas de preço. Nada mais! ;)</footer>
 
-    <!-- <footer>É apenas uma maneira simples e automatizada de realizar as pesquisas de preço. Nada mais! ;)</footer> -->
-    
     <script src="/node_modules/angular/angular.js"></script>
     <script src="/node_modules/angular-aria/angular-aria.js"></script>
     <script src="/node_modules/angular-animate/angular-animate.js"></script>

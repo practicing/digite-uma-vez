@@ -1,14 +1,15 @@
-// 'use strict';
+/* global datepickerModule */
 
-// angular
-//   .module('datepickerBasicUsage', ['ngMaterial', 'ngMessages'])
-//   .controller('AppCtrl', function ($scope) {
-//     $scope.origDate = new Date(
-//       $scope.myDate.getFullYear(),
-//       $scope.myDate.getMonth(),
-//       $scope.myDate.getDate());
-//     $scope.destDate = new Date(
-//       $scope.origDate.getFullYear(),
-//       $scope.origDate.getMonth(),
-//       $scope.origDate.getDate());
-//   });
+'use strict';
+
+datepickerModule.controller('datepickerCtrl', function ($scope) {
+  $scope.myDate = new Date();
+  $scope.minDate = new Date(
+      $scope.myDate.getFullYear(),
+      $scope.myDate.getMonth() - 2,
+      $scope.myDate.getDate());
+  $scope.maxDate = new Date(
+      $scope.myDate.getFullYear(),
+      $scope.myDate.getMonth() + 2,
+      $scope.myDate.getDate());
+});

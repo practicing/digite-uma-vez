@@ -1,17 +1,7 @@
+/* eslint no-unused-vars: 0 */
+
 'use strict';
 
-var app = angular.module('duvApp', ['ngMaterial']);
-
-app.controller('DemoCtrl', []);
-
-// // app.controller('AppCtrl', ['$scope', '$mdSidenav', function ($scope, $mdSidenav) {
-// //   $scope.toggleSidenav = function (menuId) {
-// //     $mdSidenav(menuId).toggle();
-// //   };
-// // }]);
-
-// app.controller('DemoCtrl', ['$scope', '$mdSidenav', function ($scope, $mdSidenav) {
-//   $scope.toggleSidenav = function (menuId) {
-//     $mdSidenav(menuId).toggle();
-//   };
-// }]);
+var autocompleteModule = angular.module('autocompleteModule', ['ngMaterial']);
+var datepickerModule = angular.module('datepickerModule', ['ngMaterial']);
+var app = angular.module('duvApp', ['autocompleteModule', 'datepickerModule']);
