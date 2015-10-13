@@ -75,7 +75,7 @@ rules:
     no-underscore-dangle: 2
     no-unused-expressions: 2
     no-unused-vars: [2, {vars: "all", args: "after-used"}]
-    no-use-before-define: 2
+    no-use-before-define: [2, 'nofunc']
     no-useless-concat: 2
     no-with: 2
     quotes: [2, "single"]
@@ -91,8 +91,8 @@ rules:
     space-unary-ops: [2, {words: true, nonwords: false}]
     spaced-comment: [2, "always", { exceptions: ["-"]}]
     strict: [2, "global"]
-    valid-jsdoc: [2, { prefer: { "return": "returns"}}]
-    wrap-iife: 2
+    valid-jsdoc: 0
+    wrap-iife: [2, "inside"]
     yoda: [2, "never"]
 
     # Previously on by default in node environment
