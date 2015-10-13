@@ -66,7 +66,10 @@ gulp.task('js:compress', function() {
         .pipe(plugins.rename({
             suffix: '.min'
         }))
-        .pipe(plugins.uglify())
+        .pipe(plugins.uglify({
+          // mangle: false,
+          // compress: false
+        }))
         .pipe(plugins.sourcemaps.write('./'))
         .pipe(gulp.dest(paths.js.output));
 });
@@ -81,14 +84,14 @@ gulp.task('js:lint', function () {
         .pipe(plugins.eslint.failAfterError());
 });
 
-// gulp.task('js:watch', ['js:lint'], function () {
-//     gulp.watch([paths.js.input], ['js:lint']);
-// });
+gulp.task('js:watchLint', ['js:lint'], function () {
+    gulp.watch([paths.js.input], ['js:lint']);
+});
 
 
-// gulp.task('css:watch', ['css:lint'], function () {
-//     gulp.watch([paths.css.input], ['css:lint']);
-// });
+gulp.task('css:watchLint', ['css:lint'], function () {
+    gulp.watch([paths.css.input], ['css:lint']);
+});
 
 
 // Build the code
