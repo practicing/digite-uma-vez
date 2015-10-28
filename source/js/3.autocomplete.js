@@ -4,9 +4,11 @@
 
 (function () {
 
-  autocompleteModule.controller('autocompleteController', ['$timeout', '$q', '$log', autocompleteCtrl]);
+  autocompleteModule
+    .value('message', 'Hello world!')
+    .controller('autocompleteController', ['$timeout', '$q', '$log', 'message', 'airportService', autocompleteCtrl]);
 
-  function autocompleteCtrl ($timeout, $q, $log) {
+  function autocompleteCtrl ($timeout, $q, $log, message, airportService) {
     var self = this;
     self.simulateQuery = false;
     // list of `state` value/display objects
@@ -45,6 +47,17 @@
      */
     function loadAll () {
       var allStates = 'NYC, VCP, SAO, YVR, YYZ';
+      var airportData;
+
+      airportService.get().then(function (res) {
+        if (res.status === 200) {
+          airportData = res.data;
+
+          console.log(airportData);
+        }
+      });
+
+      // console.log(airportData);
       return allStates.split(/, +/g).map( function (state) {
         return {
           value: state.toLowerCase(),

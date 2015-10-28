@@ -18,10 +18,11 @@
         <p>Simples assim! :)</p>
     </header>
 
-    <!-- <div ng-controller="duvController as travel">
-        {{travel.origin}}
-        {{travel.destination}}
-    </div> -->
+    <!-- <div ng-controller="airportController">
+	    <div ng-repeat="airport in airports">
+	        {{airport.code}} - {{airport.city}}
+	    </div>
+	</div> -->
 
     <div ng-controller="autocompleteController as acCtrl" layout="column" ng-cloak>
         <md-content class="md-padding">
@@ -73,7 +74,7 @@
         </md-content>
     </div>
 
-    <div ng-controller="datepickerCtrl" layout="column" ng-cloak>
+    <div ng-controller="datepickerController" layout="column" ng-cloak>
         <md-content class="md-padding">
             <p>Ida:</p>
             <md-datepicker ng-model="origDate" md-placeholder="Selecione a data"></md-datepicker>

@@ -3,6 +3,12 @@
 	[
 		{
 			"path": "."
+		},
+		{
+			"path": "/Users/luisfmsouza/Documents/web/development/gulp-boilerplate"
+		},
+		{
+			"path": "/Users/luisfmsouza/Documents/web/development/LearnAngular"
 		}
 	]
 }
