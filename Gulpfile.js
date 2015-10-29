@@ -102,6 +102,7 @@ gulp.task('css:bsWatch', ['css:lint', 'css:compress'], browserSync.stream);
 
 // Main tasks
 gulp.task('server', ['browser-sync']);
+gulp.task('default', ['server']);
 
 // Tasks to check the code via automated tools
 gulp.task('pre-commit', ['css:lint', 'js:lint']);

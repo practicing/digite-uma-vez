@@ -13,6 +13,24 @@ aiportModule.service('airportService', ['$http', function ($http) {
     });
   };
 
+
+  // this.getCustomers = function() {
+  //   var promisse = $http({
+  //       method : 'POST',
+  //       url : '/CustomerManagementApp/customers/all'
+  //   }).success(function(data, status, headers, config) {
+  //       $log.log('Done');
+  //       angular.forEach(data, function(c) {
+  //           $log.log(c.firstName);
+  //       });
+  //       customers = data;
+  //       return customers;
+  //   });
+
+  //   return promise;
+  // };
+
+
   return obj;
   // $http.get(url)
   //   .success(function (data, status, headers, config) {

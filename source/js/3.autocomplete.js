@@ -49,21 +49,30 @@
       var allStates = 'NYC, VCP, SAO, YVR, YYZ';
       var airportData;
 
-      airportService.get().then(function (res) {
+      airportData = airportService.get().then(function (res) {
         if (res.status === 200) {
           airportData = res.data;
 
-          console.log(airportData);
+          // console.log(airportData);
+          allStates = airportData.map(function (airport) {
+            return airport.code + ' - ' + airport.name;
+          });
+
+          self.states = allStates.map(function (state) {
+            return {
+              value: state.toLowerCase(),
+              display: state
+            };
+          });
         }
       });
 
-      // console.log(airportData);
-      return allStates.split(/, +/g).map( function (state) {
-        return {
-          value: state.toLowerCase(),
-          display: state
-        };
-      });
+      // return allStates.split(/, +/g).map( function (state) {
+      //   return {
+      //     value: state.toLowerCase(),
+      //     display: state
+      //   };
+      // });
     }
     /**
      * Create filter function for a query string
