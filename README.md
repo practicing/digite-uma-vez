@@ -2,6 +2,7 @@
 Cansado de digitar datas e destinos toda vez que acessa um novo site pra consulta de preço?
 
 ![Build Status](https://travis-ci.org/practicing/digite-uma-vez.svg?branch=master "Build Status")
+![Dependency Status](https://david-dm.org/practicing/digite-uma-vez.svg "Dependency Status")
 
 ## E se eu quiser rodar a aplicação?
 
