@@ -37,6 +37,9 @@
     "pre-commit": "gulp pre-commit",
     "postinstall": "bower cache clean && bower install"
   },
+  "precommit": {
+    "run": "pre-commit"
+  },
   "engines": {
     "node": ">=0.10.0"
   }
