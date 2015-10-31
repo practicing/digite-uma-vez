@@ -13,3 +13,6 @@ deploy:
   api_key:
     secure: VSRkr8m9wLLGnrkZltjqPgmnotFspX3adPx9KtVOO7J+FDK/eOU0tdn12Cugk6kcvo7fzhD/VpSY/ZN3IqgDTD4IlWc4hvvdRKUdsIhurboIZq2kM+V+uZzLYohygi5pgxffLjtPuFCu8XKsY2eAa8/j+u40i1q1Z1+vrKmZJybhV/DrVOWBh/XpOAHO30HMy6++KgfdgLPYM00zCEAnuti+0Fv4zr8mm4/OTiNnKt27SY9iwVwj0/8/C9aY63reQYrsBs844zeVsqawQGKfmOS2Wl6mzquPf+64PQNgX7sjvaFQmuxBUb5CFOK7HSmRdSTu0Dr7KQYS7zgsrGwXl/1fquvpviSuQBio6tmRl7DrbQLzG3BDI+TNFou1fgpXc8FDTtiZjCK9PDKItb6RNlTudg62mLnZDxU0OGjBElpEtwr4HWM8e32UmpPAREw6voew7GFBI7RbRWqM6Fp57o3gvhieqedvw8L222Dz/eyNtgL897Y6X+y69G+8uAToP01DTQQvRrvV/cUYQBzRYjeuwcMY0NrdxzzGD2WzPqWR6LYEqvOwiw84/qRci4yulYe+L2Jn2MykjOml0hNp5+XEd7OSRNsP8hMEzGhYY9xn4XHfaMCEvFOha32Xuv/p+nUTFzPxsnWUJSJ1z1LnK+WQ3D8A/eZ034MuSO/4hHk=
   app: digiteumavez
+addons:
+    code_climate:
+        repo_token: 0818a9b8ef9a3311c9458bbcfcdcb2f030247f2911274ea6f5f6a2ffd851703b

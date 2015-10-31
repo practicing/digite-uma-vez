@@ -4,6 +4,7 @@ Cansado de digitar datas e destinos toda vez que acessa um novo site pra consult
 [![Build Status](https://travis-ci.org/practicing/digite-uma-vez.svg?branch=master "Build Status")](https://travis-ci.org/practicing/digite-uma-vez)
 [![Dependency Status](https://david-dm.org/practicing/digite-uma-vez.svg)](https://david-dm.org/practicing/digite-uma-vez)
 [![devDependency Status](https://david-dm.org/practicing/digite-uma-vez/dev-status.svg)](https://david-dm.org/practicing/digite-uma-vez#info=devDependencies)
+[![Code Climate](https://codeclimate.com/github/practicing/digite-uma-vez/badges/gpa.svg)](https://codeclimate.com/github/practicing/digite-uma-vez)
 
 ## E se eu quiser rodar a aplicação?
 
