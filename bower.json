@@ -1,7 +1,7 @@
 {
   "name": "digite-uma-vez",
   "description": "Digite uma vez",
-  "main": "index.js",
+  "main": "index.html",
   "authors": [
     "Luis Felipe Souza <luisfmsouza@gmail.com>"
   ],
