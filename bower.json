@@ -1,0 +1,24 @@
+{
+  "name": "digite-uma-vez",
+  "description": "Digite uma vez",
+  "main": "index.js",
+  "authors": [
+    "Luis Felipe Souza <luisfmsouza@gmail.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "gulp",
+    "package",
+    "json",
+    "gulpfile"
+  ],
+  "homepage": "http://digiteumavez.herokuapp.com/",
+  "moduleType": [],
+  "ignore": [
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4"
+  }
+}
