@@ -14,6 +14,7 @@
   "repository": "https://github.com/luisfmsouza/digite-uma-vez",
   "homepage": "http://digiteumavez.herokuapp.com/",
   "dependencies": {
+    "bower": "^1.6.5",
     "mime": "~1.3.4"
   },
   "devDependencies": {
@@ -34,12 +35,14 @@
     "pre-commit": "^1.1.1"
   },
   "scripts": {
-    "pre-commit": "gulp pre-commit"
+    "pre-commit": "gulp pre-commit",
+    "postinstall": "bower install"
   },
   "precommit": {
     "run": "pre-commit"
   },
   "engines": {
-    "node": ">=0.10.0"
+    "node": "4.2.x",
+    "npm": "3.3.x"
   }
 }

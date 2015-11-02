@@ -1,0 +1,52 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'npm@latest', '-g' ]
+2 info using npm@2.11.3
+3 info using node@v0.12.7
+4 verbose install initial load of /usr/local/lib/package.json
+5 verbose readDependencies loading dependencies from /usr/local/lib/package.json
+6 silly cache add args [ 'npm@latest', null ]
+7 verbose cache add spec npm@latest
+8 silly cache add parsed spec { raw: 'npm@latest',
+8 silly cache add   scope: null,
+8 silly cache add   name: 'npm',
+8 silly cache add   rawSpec: 'latest',
+8 silly cache add   spec: 'latest',
+8 silly cache add   type: 'tag' }
+9 silly addNamed npm@latest
+10 verbose addNamed "latest" is being treated as a dist-tag for npm
+11 info addNameTag [ 'npm', 'latest' ]
+12 silly mapToRegistry name npm
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry https://registry.npmjs.org/
+15 silly mapToRegistry uri https://registry.npmjs.org/npm
+16 verbose addNameTag registry:https://registry.npmjs.org/npm not in flight; fetching
+17 verbose request uri https://registry.npmjs.org/npm
+18 verbose request no auth needed
+19 info attempt registry request try #1 at 4:16:45 PM
+20 verbose request id 380328d481c4a1b5
+21 http request GET https://registry.npmjs.org/npm
+22 info retry will retry, error on last attempt: Error: read ECONNRESET
+23 info attempt registry request try #2 at 4:21:55 PM
+24 http request GET https://registry.npmjs.org/npm
+25 info retry will retry, error on last attempt: Error: read ECONNRESET
+26 info attempt registry request try #3 at 4:24:38 PM
+27 http request GET https://registry.npmjs.org/npm
+28 verbose stack Error: read ECONNRESET
+28 verbose stack     at exports._errnoException (util.js:746:11)
+28 verbose stack     at TCP.onread (net.js:559:26)
+29 verbose cwd /Users/luisfmsouza/Documents/web/development/digite-uma-vez
+30 error Darwin 15.0.0
+31 error argv "node" "/usr/local/bin/npm" "install" "npm@latest" "-g"
+32 error node v0.12.7
+33 error npm  v2.11.3
+34 error code ECONNRESET
+35 error errno ECONNRESET
+36 error syscall read
+37 error network read ECONNRESET
+37 error network This is most likely not a problem with npm itself
+37 error network and is related to network connectivity.
+37 error network In most cases you are behind a proxy or have bad network settings.
+37 error network
+37 error network If you are behind a proxy, please make sure that the
+37 error network 'proxy' config is set properly.  See: 'npm help config'
+38 verbose exit [ 1, true ]
